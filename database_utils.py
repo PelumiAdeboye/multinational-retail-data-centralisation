@@ -46,7 +46,7 @@ class DatabaseConnector():
         DBAPI = 'psycopg2'
         HOST = 'localhost'
         USER = 'postgres'
-        PASSWORD = 'Adaobi31'
+        PASSWORD = '....'
         DATABASE = 'sales_data'
         PORT = 5432
         local_engine = sqlalchemy.create_engine(f"{DATABASE_TYPE}+{DBAPI}://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}")
