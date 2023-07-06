@@ -61,11 +61,5 @@ class DataExtractor():
 
 if __name__ == "__main__":
     isinstance = DataExtractor()
-    # isinstance.read_rds_table('orders_table')
-    # isinstance.list_db_tables()
-    # isinstance.retreve_pdf_data()
-    # isinstance.list_number_of_stores()
-    # isinstance.retrieve_stores_data()
-    # isinstance.extract_from_s3('s3://data-handling-public/products.csv')
-    # isinstance.extract_from_s3_json()
+
 
