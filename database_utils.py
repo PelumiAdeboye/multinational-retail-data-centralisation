@@ -60,9 +60,5 @@ if __name__ == '__main__':
    
     from data_cleaning import DataCleaning
     from data_extraction import DataExtractor
-    #DatabaseConnector().upload_to_db(DataCleaning().clean_user_data(),'dim_users')    
-    #DatabaseConnector().upload_to_db(DataCleaning().clean_card_data(),'dim_card_details')
-    #DatabaseConnector().upload_to_db(DataClean().clean_store_data(),'dim_store_details' )
-    #DatabaseConnector().upload_to_db((DataClean().clean_products_data(DataExtractor().extract_from_s3('s3://data-handling-public/products.csv'))), 'dim_products')
-    #DatabaseConnector().upload_to_db(DataClean().clean_orders_data(), 'orders_table')
-    #DatabaseConnector().upload_to_db((DataClean().clean_date_times()), 'dim_date_times')
+    DatabaseConnector().upload_to_db(DataCleaning().clean_user_data(),'dim_users')    
+
