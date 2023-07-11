@@ -22,7 +22,7 @@ Looking out for NULL values, errors with dates, incorrectly typed values, and ro
 
  - Retrieved store data through the use of an API. The API has two GET methods. One will return the number of stores in the business and the other to retrieve a store given a store number. I used the API key to connect to the API in the method header. I then cleaned the store data and uploaded the dataframe to the database named Sales_data in pgadmin.
 
- - Extracted information for each product the company currently sells stored in CSV format in an S3 bucket on AWS. I created a method in DataExtractor  that uses the boto3 package to download and extract the information returning a pandas dataframe. I then cleaned the data frame and uploaded it to the data base.
+ - Extracted information for each product the company currently sells stored in CSV format in an S3 bucket on AWS. I created a method in DataExtractor  that uses the boto3 package to download and extract the information returning a pandas dataframe. I then cleaned the data frame and uploaded it to the database.
 
  - I extracted and cleaned the orders table which acts as the single source of truth for all orders the company has made in the past and is stored in a database on AWS RDS. I extracted it by using earlier methods I created in data extraction. I then uploaded the dataframe to the database.
 
